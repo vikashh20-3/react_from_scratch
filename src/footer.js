@@ -1,8 +1,10 @@
-const Footer =()=>{
-    
-    return(
+const Footer = () => {
+    const date = new Date();
+    return (
         <footer>
-            this is footer 
+            <p>
+                Copyright &copy; {date.getFullYear()}
+            </p>
         </footer>
     )
 }

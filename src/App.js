@@ -3,7 +3,7 @@ import Content from './content';
 import Footer from './footer';
 import Header from './header';
 
-function App1() {
+function App() {
 
 
 
@@ -17,4 +17,4 @@ function App1() {
   );
 }
 
-export default App1;
+export default App;
