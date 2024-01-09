@@ -1,25 +1,33 @@
 import './App.css';
-import logo from './logo.svg';
 
-function App() {
+function App1() {
+
+  const handleNameChange = () => {
+    const names = ['vikash', 'bob', 'dave'];
+    const int = Math.floor(Math.random() * 3);
+    return names[int];
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="lo1go" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello {handleNameChange()}!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* we can render js code as a string  */}
+
+        <p>Vikash</p>
+        <p>{"Vikash"}</p>
+        <p>{[2, 3, 4]}</p>
+
+        {/* we cannot display object in this way  */}
+        {/* <p>{{a:3}}</p> */}
+        {/* it will show that object cannot be rendered */}
+        boolean can also be not rendered in this way
+
       </header>
     </div>
   );
 }
 
-export default App;
+export default App1;
