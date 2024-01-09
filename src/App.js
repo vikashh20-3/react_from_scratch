@@ -1,4 +1,5 @@
 import './App.css';
+import Header from './header';
 
 function App1() {
 
@@ -10,7 +11,9 @@ function App1() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <Header />
+
+      <div>
         <p>
           Hello {handleNameChange()}!
         </p>
@@ -23,9 +26,9 @@ function App1() {
         {/* we cannot display object in this way  */}
         {/* <p>{{a:3}}</p> */}
         {/* it will show that object cannot be rendered */}
-        boolean can also be not rendered in this way
+        {/* boolean can also be not rendered in this way */}
 
-      </header>
+      </div>
     </div>
   );
 }
