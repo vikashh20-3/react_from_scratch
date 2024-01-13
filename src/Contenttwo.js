@@ -26,9 +26,9 @@ const Contenttwo = () => {
                 {
                     items.map((item)=>(
                          <li className="item">
-                            <input type="checkbox" checked={items.checked} /> 
+                            <input type="checkbox" checked={items.checked}  /> 
                             <label htmlFor="">{item.item}</label>
-                            <button>Delete</button>
+                            <button oncli >Delete</button>
                         </li>
                     ))
                 }
